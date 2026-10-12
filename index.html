@@ -5,23 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Arturo</title>
 </head>
-<body>
-    <!-- Menú de navegación principal -->
-    <nav style="text-align: center; padding: 20px; font-family: Arial, sans-serif; background-color: #f4f4f4;">
-        <a href="index.html" style="font-weight: bold; text-decoration: none; color: black;">ARTURO SEBASTIAN GARCÍA SOTO</a> | 
-        <a href="#labs" style="text-decoration: none; color: black;">LABS</a> | 
-        <a href="#projects" style="text-decoration: none; color: black;">PROJECT DELIVERABLES</a>
-    </nav>
+<!-- Usamos el truco del 'linear-gradient' para oscurecer la imagen de fondo sin usar la etiqueta <style> -->
+<body style="margin: 0; font-family: Arial, sans-serif; background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/736x/08/62/a4/0862a4ba4a7ca4ff0a329655fe01600c.jpg'); background-size: cover; background-attachment: fixed; background-position: center;">
 
-    <!-- Sección de Labs -->
-    <div id="labs" style="padding: 40px 20px; font-family: Arial, sans-serif;">
-        <h2 style="border-bottom: 2px solid black; padding-bottom: 10px;">Labs</h2>
-        <ul>
+    <!-- Menú de navegación principal con fondo oscuro semi-transparente -->
+    <div style="background-color: rgba(0, 0, 0, 0.85); padding: 20px; text-align: center; border-radius: 0 0 0.5cm 0.5cm; margin-bottom: 40px;">
+        <a href="index.html" style="font-weight: bold; text-decoration: none; color: white; font-size: 22px;">ARTURO SEBASTIAN GARCÍA SOTO</a> 
+        <span style="color: gray; margin: 0 15px;">|</span>
+        <a href="#labs" style="text-decoration: none; color: #4db8ff; font-weight: bold; font-size: 18px;">LABS</a> 
+        <span style="color: gray; margin: 0 15px;">|</span>
+        <a href="#projects" style="text-decoration: none; color: white; font-size: 18px;">PROJECT DELIVERABLES</a>
+    </div>
+
+    <!-- Contenedor central blanco (como los recuadros grises que hicimos para Tom Cruise) -->
+    <div id="labs" style="background-color: rgba(255, 255, 255, 0.95); padding: 40px; border-radius: 0.5cm; max-width: 1600px; margin: 0 auto;">
+        
+        <h2 style="border-bottom: 4px solid #4db8ff; padding-bottom: 10px; margin-top: 0; color: #333; font-size: 35px;">Labs</h2>
+        
+        <p style="font-size: 18px; color: #666; margin-bottom: 25px;">Aquí puedes encontrar los proyectos y laboratorios que he desarrollado:</p>
+
+        <!-- Lista de Labs sin puntos, usando Flexbox para que el enlace parezca un botón grande -->
+        <ul style="list-style-type: none; padding: 0; margin: 0;">
             <li>
-                <!-- Este enlace busca la carpeta lab1 y abre tu Fan Page -->
-                <a href="lab1/index.html" style="color: blue; text-decoration: none; font-size: 18px;">Lab 01 — Artist Fan Page</a>
+                <a href="lab1/index.html" target="_blank" style="display: flex; align-items: center; background-color: #eae5df; padding: 20px; border-radius: 0.3cm; text-decoration: none; color: black; border-left: 8px solid rgb(118, 27, 27);">
+                    <span style="font-size: 22px; font-weight: bold; color: rgb(118, 27, 27); margin-right: 20px;">Lab 01</span>
+                    <span style="font-size: 18px; font-weight: normal;">— Artist Fan Page (Tom Cruise)</span>
+                </a>
             </li>
         </ul>
+
     </div>
+
 </body>
 </html>
