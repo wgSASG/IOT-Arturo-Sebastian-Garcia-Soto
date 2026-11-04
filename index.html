@@ -1,242 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 3 - Redesigning YouTube</title>
-    <link rel="icon" type="image/x-icon" href="https://www.youtube.com/favicon.ico">
-
-    <style>
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('img/step1.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            opacity: 0.15;
-            z-index: -1;
-        }
-    </style>
+    <title>Portafolio de Arturo</title>
+    <link rel="icon" type="image/jpg" href="https://i.pinimg.com/1200x/14/dd/2f/14dd2fa97782b8f4e07e961d9a61e736.jpg">
 </head>
-<body style="font-family: Arial, sans-serif; max-width: 1050px; margin: 20px auto;">
 
-    <!-- Menú de Navegación Principal -->
-    <div style="background-color: rgb(33, 33, 33); padding: 15px; border-radius: 0.5cm; margin-bottom: 20px; text-align: center;">
-        <a href="../index.html" style="color: white; text-decoration: none; font-size: 18px; font-weight: bold; margin: 0 12px;">Portfolio</a>
-        <a href="#app" style="color: #ff4e45; text-decoration: none; font-size: 18px; font-weight: bold; margin: 0 12px;">App</a>
-        <a href="#current" style="color: #ff4e45; text-decoration: none; font-size: 18px; font-weight: bold; margin: 0 12px;">Current flow</a>
-        <a href="#analysis" style="color: #ff4e45; text-decoration: none; font-size: 18px; font-weight: bold; margin: 0 12px;">Analysis</a>
-        <a href="#proposal" style="color: #ff4e45; text-decoration: none; font-size: 18px; font-weight: bold; margin: 0 12px;">Proposal</a>
-        <a href="#newflow" style="color: #ff4e45; text-decoration: none; font-size: 18px; font-weight: bold; margin: 0 12px;">New flow</a>
-        <a href="#why" style="color: #ff4e45; text-decoration: none; font-size: 18px; font-weight: bold; margin: 0 12px;">Justification</a>
+<body style="margin: 0; font-family: Arial, sans-serif; background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/736x/08/62/a4/0862a4ba4a7ca4ff0a329655fe01600c.jpg'); background-size: cover; background-attachment: fixed; background-position: center;">
+
+    <!-- Menú de navegación  -->
+    <div style="background-color: rgba(0, 0, 0, 0.85); padding: 20px; text-align: center; border-radius: 0 0 0.5cm 0.5cm; margin-bottom: 40px;">
+        <a href="index.html" style="font-weight: bold; text-decoration: none; color: white; font-size: 22px;">ARTURO SEBASTIAN GARCÍA SOTO</a> 
+        <span style="color: gray; margin: 0 15px;">|</span>
+        <a href="#labs" style="text-decoration: none; color: #4db8ff; font-weight: bold; font-size: 18px;">LABS</a> 
+        <span style="color: gray; margin: 0 15px;">|</span>
+        <a href="#projects" style="text-decoration: none; color: white; font-size: 18px;">PROJECT DELIVERABLES</a>
     </div>
 
-    <!--Portada-->
-    <div style="background-color: #eae5df; padding: 40px; border-radius: 0.5cm; text-align: center;">
-        <img src="img/tec.png" alt="Tecnologico de Monterrey" style="width: 380px; margin-bottom: 30px;">
-        <h1 style="font-size: 1.2cm; color: rgb(33, 33, 33); margin: 0 0 10px 0;">Lab 3 — Redesigning a Digital Experience</h1>
-        <p style="font-size: 22px; color: #cc0000; font-weight: bold; margin: 0 0 35px 0;">YouTube: saving a video to a playlist from the preview</p>
+    
+    <div id="labs" style="background-color: rgba(255, 255, 255, 0.95); padding: 40px; border-radius: 0.5cm; max-width: 1600px; margin: 0 auto;">
+        
+        <h2 style="border-bottom: 4px solid #4db8ff; padding-bottom: 10px; margin-top: 0; color: #333; font-size: 35px;">Labs</h2>
+        
+        <p style="font-size: 18px; color: #666; margin-bottom: 25px;">Aquí puedes encontrar los proyectos y laboratorios que he desarrollado:</p>
+        
+        <ul style="list-style-type: none; padding: 0; margin: 0;">
+            <li>
+                <a href="lab1/index.html" target="_blank" style="display: flex; align-items: center; background-color: #eae5df; padding: 20px; border-radius: 0.3cm; text-decoration: none; color: black; border-left: 8px solid rgb(118, 27, 27);">
+                    <span style="font-size: 22px; font-weight: bold; color: rgb(118, 27, 27); margin-right: 20px;">Lab 01</span>
+                    <span style="font-size: 18px; font-weight: normal;">— Artist Fan Page (Tom Cruise)</span>
+                </a>
+            </li>
+            <li style="margin-top: 15px;">
+                <a href="lab2/index.html" target="_blank" style="display: flex; align-items: center; background-color: #eae5df; padding: 20px; border-radius: 0.3cm; text-decoration: none; color: black; border-left: 8px solid rgb(20, 33, 82);">
+                    <span style="font-size: 22px; font-weight: bold; color: rgb(20, 33, 82); margin-right: 20px;">Lab 02</span>
+                    <span style="font-size: 18px; font-weight: normal;">— Event Blog (Mostla Day)</span>
+                </a>
+            </li>
+            <li style="margin-top: 15px;">
+                <a href="lab3/index.html" target="_blank" style="display: flex; align-items: center; background-color: #eae5df; padding: 20px; border-radius: 0.3cm; text-decoration: none; color: black; border-left: 8px solid #cc0000;">
+                    <span style="font-size: 22px; font-weight: bold; color: #cc0000; margin-right: 20px;">Lab 03</span>
+                    <span style="font-size: 18px; font-weight: normal;">— Redesigning a Digital Experience (YouTube)</span>
+                </a>
+            </li>
+        </ul>
 
-        <div style="background-color: rgba(255, 255, 255, 0.6); padding: 20px 30px; border-radius: 0.3cm; display: inline-block; text-align: left; border-left: 8px solid #cc0000;">
-            <p style="font-size: 18px; margin: 0 0 10px 0;"><span style="font-weight: bold;">Subject:</span> Implementación de internet de las cosas</p>
-            <p style="font-size: 18px; margin: 0 0 10px 0;"><span style="font-weight: bold;">Professor:</span> Rodrigo Sánchez Luna</p>
-            <p style="font-size: 18px; margin: 0 0 10px 0;"><span style="font-weight: bold;">Student:</span> García Soto Arturo Sebastián</p>
-            <p style="font-size: 18px; margin: 0 0 10px 0;"><span style="font-weight: bold;">Student ID:</span> A00842192</p>
-            <p style="font-size: 18px; margin: 0;"><span style="font-weight: bold;">Due date:</span> November 3, 2026</p>
-        </div>
     </div>
 
-    <!--1. Aplicacion seleccionada-->
-    <div id="app" style="background-color: #eae5df; padding: 20px; border-radius: 0.5cm; margin-top: 20px;">
-        <h2 style="font-size: 0.9cm; margin: 0 0 15px 0; color: rgb(33, 33, 33); border-bottom: 4px solid #cc0000; padding-bottom: 10px;">1. Selected application</h2>
-
-        <div style="display: flex; gap: 20px;">
-            <div style="flex: 1; background-color: rgba(255, 255, 255, 0.6); padding: 15px; border-radius: 0.3cm;">
-                <h3 style="margin: 0 0 10px 0; color: #cc0000;">App</h3>
-                <p style="margin: 0; font-size: 17px; color: #333;"><span style="font-weight: bold;">YouTube</span> (web version, on a laptop).</p>
-            </div>
-            <div style="flex: 2; background-color: rgba(255, 255, 255, 0.6); padding: 15px; border-radius: 0.3cm;">
-                <h3 style="margin: 0 0 10px 0; color: #cc0000;">Feature</h3>
-                <p style="margin: 0; font-size: 17px; color: #333;"><span style="font-weight: bold;">Saving a video to a playlist</span> (like "Watch later" or my own playlists) directly from the home page, without opening the video.</p>
-            </div>
-        </div>
-
-        <div style="background-color: rgba(255, 255, 255, 0.6); padding: 15px; border-radius: 0.3cm; margin-top: 20px;">
-            <h3 style="margin: 0 0 10px 0; color: #cc0000;">The task</h3>
-            <p style="margin: 0 0 10px 0; font-size: 17px; color: #333;">
-                When I scroll the YouTube home page and put the mouse over a video, the video starts playing as a preview. At that moment only two buttons appear on the video: <span style="font-weight: bold;">mute</span> and <span style="font-weight: bold;">subtitles (CC)</span>.
-            </p>
-            <p style="margin: 0; font-size: 17px; color: #333;">
-                A lot of times I see a video that looks interesting but I don't have time to watch it right now, so I want to save it to a playlist for later. The problem is that the save option is not in the preview, it is hidden inside the small <span style="font-weight: bold;">⋮</span> menu under the video.
-            </p>
-        </div>
-    </div>
-
-    <!--2. Flujo actual-->
-    <div id="current" style="background-color: #eae5df; padding: 20px; border-radius: 0.5cm; margin-top: 20px;">
-        <h2 style="font-size: 0.9cm; margin: 0 0 10px 0; color: rgb(33, 33, 33); border-bottom: 4px solid #cc0000; padding-bottom: 10px;">2. Current user flow</h2>
-        <p style="margin: 0 0 20px 0; font-size: 17px; color: #333;">
-            Home → Hover video → Open ⋮ menu → "Guardar en una playlist" → Choose playlist → Close window
-        </p>
-
-        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-            <!--Paso 1-->
-            <div style="width: 470px; background-color: rgba(255, 255, 255, 0.6); padding: 12px; border-radius: 0.3cm;">
-                <img src="img/step1.jpg" alt="Step 1" style="width: 100%; border-radius: 0.2cm;">
-                <h3 style="margin: 10px 0 5px 0; color: #cc0000;">Step 1 — Hover the video</h3>
-                <p style="margin: 0; font-size: 15px; color: #333;">I put the mouse over the video (middle). The preview starts playing and only the <span style="font-weight: bold;">mute</span> and <span style="font-weight: bold;">CC</span> buttons appear. There is no way to save it from here.</p>
-            </div>
-            <!--Paso 2-->
-            <div style="width: 470px; background-color: rgba(255, 255, 255, 0.6); padding: 12px; border-radius: 0.3cm;">
-                <img src="img/step2.jpg" alt="Step 2" style="width: 100%; border-radius: 0.2cm;">
-                <h3 style="margin: 10px 0 5px 0; color: #cc0000;">Step 2 — Open the ⋮ menu</h3>
-                <p style="margin: 0; font-size: 15px; color: #333;">I have to find the small <span style="font-weight: bold;">⋮</span> icon next to the title. A menu with <span style="font-weight: bold;">8 options</span> opens, on top of other videos.</p>
-            </div>
-            <!--Paso 3-->
-            <div style="width: 470px; background-color: rgba(255, 255, 255, 0.6); padding: 12px; border-radius: 0.3cm;">
-                <img src="img/step3.jpg" alt="Step 3" style="width: 100%; border-radius: 0.2cm;">
-                <h3 style="margin: 10px 0 5px 0; color: #cc0000;">Step 3 — "Guardar en una playlist"</h3>
-                <p style="margin: 0; font-size: 15px; color: #333;">I click "Guardar en una playlist". Notice that the <span style="font-weight: bold;">preview stopped</span>: when the mouse left the video it went back to the thumbnail.</p>
-            </div>
-            <!--Paso 4-->
-            <div style="width: 470px; background-color: rgba(255, 255, 255, 0.6); padding: 12px; border-radius: 0.3cm;">
-                <img src="img/step4.jpg" alt="Step 4" style="width: 100%; border-radius: 0.2cm;">
-                <h3 style="margin: 10px 0 5px 0; color: #cc0000;">Step 4 — Choose the playlist</h3>
-                <p style="margin: 0; font-size: 15px; color: #333;">A "Guardar en..." window appears with my playlists (Watch later, Piano, Mate, progra). I click the bookmark icon of one and then click outside to close the window.</p>
-            </div>
-        </div>
-    </div>
-
-    <!--3. Analisis UX-->
-    <div id="analysis" style="background-color: #eae5df; padding: 20px; border-radius: 0.5cm; margin-top: 20px;">
-        <h2 style="font-size: 0.9cm; margin: 0 0 15px 0; color: rgb(33, 33, 33); border-bottom: 4px solid #cc0000; padding-bottom: 10px;">3. UX analysis</h2>
-
-        <div style="display: flex; flex-wrap: wrap; gap: 15px;">
-            <div style="width: 465px; background-color: rgba(255, 255, 255, 0.6); padding: 15px; border-radius: 0.3cm;">
-                <h3 style="margin: 0 0 8px 0; color: #cc0000;">How many steps?</h3>
-                <p style="margin: 0; font-size: 16px; color: #333;">4 actions after the hover: open ⋮, click "Guardar en una playlist", choose the playlist and close the window.</p>
-            </div>
-            <div style="width: 465px; background-color: rgba(255, 255, 255, 0.6); padding: 15px; border-radius: 0.3cm;">
-                <h3 style="margin: 0 0 8px 0; color: #cc0000;">Is the feature easy to find?</h3>
-                <p style="margin: 0; font-size: 16px; color: #333;">No. It is hidden in the ⋮ icon, which is very small, gray and outside the video. A new user would not know it is there.</p>
-            </div>
-            <div style="width: 465px; background-color: rgba(255, 255, 255, 0.6); padding: 15px; border-radius: 0.3cm;">
-                <h3 style="margin: 0 0 8px 0; color: #cc0000;">Is the navigation clear?</h3>
-                <p style="margin: 0; font-size: 16px; color: #333;">More or less. The menu mixes saving with "No me interesa" and "Denunciar". Also "Guardar en Ver más tarde" and "Guardar en una playlist" are two separate options for almost the same thing.</p>
-            </div>
-            <div style="width: 465px; background-color: rgba(255, 255, 255, 0.6); padding: 15px; border-radius: 0.3cm;">
-                <h3 style="margin: 0 0 8px 0; color: #cc0000;">Confusing moments</h3>
-                <p style="margin: 0; font-size: 16px; color: #333;">When I move the mouse to the ⋮ menu the <span style="font-weight: bold;">preview stops</span>, so I lose what I was watching. The menu and the window also cover the videos next to it.</p>
-            </div>
-            <div style="width: 465px; background-color: rgba(255, 255, 255, 0.6); padding: 15px; border-radius: 0.3cm;">
-                <h3 style="margin: 0 0 8px 0; color: #cc0000;">Buttons and feedback</h3>
-                <p style="margin: 0; font-size: 16px; color: #333;">The bookmark icons all look the same, and after saving the only feedback is a small change in the icon. It is easy to not be sure if it saved.</p>
-            </div>
-            <div style="width: 465px; background-color: rgba(255, 255, 255, 0.6); padding: 15px; border-radius: 0.3cm;">
-                <h3 style="margin: 0 0 8px 0; color: #cc0000;">What would I change?</h3>
-                <p style="margin: 0; font-size: 16px; color: #333;">Put the save option <span style="font-weight: bold;">inside the preview</span>, next to mute and CC, so I can save while the video is playing.</p>
-            </div>
-        </div>
-
-        <!--Inspiracion Pinterest-->
-        <div style="display: flex; gap: 20px; align-items: center; background-color: rgba(255, 255, 255, 0.6); padding: 15px; border-radius: 0.3cm; margin-top: 20px; border-left: 8px solid #e60023;">
-            <img src="img/pinterest.jpg" alt="Pinterest save button" style="width: 230px; border-radius: 0.3cm;">
-            <div>
-                <h3 style="margin: 0 0 10px 0; color: #e60023;">The idea: how Pinterest does it</h3>
-                <p style="margin: 0 0 10px 0; font-size: 16px; color: #333;">
-                    In Pinterest, when you put the mouse over a pin, a red <span style="font-weight: bold;">"Guardar"</span> button appears on top of the image, and next to it a menu with the board name (here "Emojis ▾") to choose <span style="font-weight: bold;">where</span> to save it.
-                </p>
-                <p style="margin: 0; font-size: 16px; color: #333;">
-                    You save in one click without opening the pin. I want to bring this same idea to the YouTube preview.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!--4. Propuesta de diseño-->
-    <div id="proposal" style="background-color: #eae5df; padding: 20px; border-radius: 0.5cm; margin-top: 20px;">
-        <h2 style="font-size: 0.9cm; margin: 0 0 10px 0; color: rgb(33, 33, 33); border-bottom: 4px solid #cc0000; padding-bottom: 10px;">4. Design proposal</h2>
-        <p style="margin: 0 0 20px 0; font-size: 17px; color: #333;">
-            A <span style="font-weight: bold;">playlist selector + "Guardar" button</span> inside the preview. The mockups keep the YouTube dark mode and the Spanish labels of my account so they look like the real app.
-        </p>
-        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-            <!--hover-->
-            <div style="width: 495px;">
-                <img src="img/mockup_a.png" alt="Mockup A - hover" style="width: 100%; border-radius: 0.3cm;">
-                <h3 style="margin: 10px 0 5px 0; color: #cc0000;">A — Hover: the new controls appear</h3>
-                <p style="margin: 0; font-size: 15px; color: #333;">The preview plays like always, but now at the top left there is the <span style="font-weight: bold;">last playlist I used</span> and a red <span style="font-weight: bold;">Guardar</span> button. Mute and CC stay in their place.</p>
-            </div>
-
-            <!--mneu playlists-->
-            <div style="width: 495px;">
-                <img src="img/mockup_b.png" alt="Mockup B - playlist list" style="width: 100%; border-radius: 0.3cm;">
-                <h3 style="margin: 10px 0 5px 0; color: #cc0000;">B — Choose where to save it</h3>
-                <p style="margin: 0; font-size: 15px; color: #333;">If I click the arrow, a small list of my playlists opens <span style="font-weight: bold;">inside the video</span>. The video keeps playing behind it, and the ✓ shows the current one.</p>
-            </div>
-            <!--guardado-->
-            <div style="width: 495px;">
-                <img src="img/mockup_c.png" alt="Mockup C - saved" style="width: 100%; border-radius: 0.3cm;">
-                <h3 style="margin: 10px 0 5px 0; color: #cc0000;">C — Saved, with clear feedback</h3>
-                <p style="margin: 0; font-size: 15px; color: #333;">The button changes to <span style="font-weight: bold;">"✓ Guardado"</span> and a message at the bottom says where it was saved, with a <span style="font-weight: bold;">Deshacer</span> (undo) option in case I made a mistake.</p>
-            </div>
-            <!--nuvea playlist-->
-            <div style="width: 495px;">
-                <img src="img/mockup_d.png" alt="Mockup D - new playlist" style="width: 100%; border-radius: 0.3cm;">
-                <h3 style="margin: 10px 0 5px 0; color: #cc0000;">D — Create a new playlist right there</h3>
-                <p style="margin: 0; font-size: 15px; color: #333;">If the playlist doesn't exist, "+ Nueva playlist" lets me type a name and <span style="font-weight: bold;">create it and save</span> the video in the same step.</p>
-            </div>
-
-        </div>
-    </div>
-
-    <!--5. nuevo fljo-->
-    <div id="newflow" style="background-color: #eae5df; padding: 20px; border-radius: 0.5cm; margin-top: 20px;">
-        <h2 style="font-size: 0.9cm; margin: 0 0 15px 0; color: rgb(33, 33, 33); border-bottom: 4px solid #cc0000; padding-bottom: 10px;">5. Proposed user flow</h2>
-
-        <!--Diagrama-->
-        <img src="img/flow.png" alt="Current flow vs proposed flow" style="width: 100%; margin-bottom: 20px;">
-        <p style="margin: 0; font-size: 16px; color: #333; background-color: rgba(255, 255, 255, 0.6); padding: 12px; border-radius: 0.3cm;">
-            The next time, the selector already shows the last playlist I used, so if I'm saving several videos to the same playlist (for example "Mate" before an exam) each one is only <span style="font-weight: bold;">one click</span>.
-        </p>
-    </div>
-
-    <!--6. Justificacion y antes/despues-->
-    <div id="why" style="background-color: #eae5df; padding: 20px; border-radius: 0.5cm; margin-top: 20px;">
-        <h2 style="font-size: 0.9cm; margin: 0 0 15px 0; color: rgb(33, 33, 33); border-bottom: 4px solid #cc0000; padding-bottom: 10px;">6. Justification</h2>
-
-        <!--Tabla-->
-        <img src="img/table.png" alt="Current vs proposed experience" style="width: 100%; border-radius: 0.3cm; margin-bottom: 20px;">
-
-        <div style="display: flex; flex-wrap: wrap; gap: 15px;">
-            <div style="width: 465px; background-color: rgba(255, 255, 255, 0.6); padding: 15px; border-radius: 0.3cm;">
-                <h3 style="margin: 0 0 8px 0; color: #cc0000;">Fewer steps</h3>
-                <p style="margin: 0; font-size: 16px; color: #333;">Saving goes from 4 actions to 1 or 2. Saving for later is something people do a lot, so it should be fast.</p>
-            </div>
-            <div style="width: 465px; background-color: rgba(255, 255, 255, 0.6); padding: 15px; border-radius: 0.3cm;">
-                <h3 style="margin: 0 0 8px 0; color: #cc0000;">Visual hierarchy</h3>
-                <p style="margin: 0; font-size: 16px; color: #333;">The red "Guardar" button is the most important action, so it has the strongest color. The playlist selector is dark and secondary, and mute/CC stay small on the right.</p>
-            </div>
-            <div style="width: 465px; background-color: rgba(255, 255, 255, 0.6); padding: 15px; border-radius: 0.3cm;">
-                <h3 style="margin: 0 0 8px 0; color: #cc0000;">The user stays in context</h3>
-                <p style="margin: 0; font-size: 16px; color: #333;">I decide while I am watching the preview, which is exactly the moment I know if I like the video. Nothing covers the other videos.</p>
-            </div>
-            <div style="width: 465px; background-color: rgba(255, 255, 255, 0.6); padding: 15px; border-radius: 0.3cm;">
-                <h3 style="margin: 0 0 8px 0; color: #cc0000;">Consistency and a known pattern</h3>
-                <p style="margin: 0; font-size: 16px; color: #333;">It uses YouTube's own colors, round buttons and dark mode, and a pattern people already know from Pinterest, so it is easy to learn.</p>
-            </div>
-            <div style="width: 465px; background-color: rgba(255, 255, 255, 0.6); padding: 15px; border-radius: 0.3cm;">
-                <h3 style="margin: 0 0 8px 0; color: #cc0000;">Clear feedback</h3>
-                <p style="margin: 0; font-size: 16px; color: #333;">The message says exactly where the video went, and "Deshacer" fixes mistakes in one click, so the user is never unsure.</p>
-            </div>
-            <div style="width: 465px; background-color: rgba(255, 255, 255, 0.6); padding: 15px; border-radius: 0.3cm;">
-                <h3 style="margin: 0 0 8px 0; color: #cc0000;">Remembers my choice</h3>
-                <p style="margin: 0; font-size: 16px; color: #333;">The selector shows the last playlist used, so saving many videos to the same playlist is one click each time.</p>
-            </div>
-        </div>
-    </div>
 </body>
 </html>
