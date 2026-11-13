@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Parking - Tec de Monterrey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menu Principal -->
+    <div class="menu">
+        <a href="../index.html" class="menu-portfolio">Portfolio</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#parking">Parking lot</a>
+    </div>
+
+    <!--datos-->
+    <div class="caja" style="text-align: center;">
+        <h1>Smart Parking — Tec de Monterrey</h1>
+        <p class="subtitulo">IoT simulation of the parking lot sensors</p>
+
+        <div class="tarjeta" style="display: inline-block; text-align: left;">
+            <p><b>Subject:</b> Implementación de internet de las cosas</p>
+            <p><b>Professor:</b> Rodrigo Sánchez Luna</p>
+            <p><b>Student:</b> García Soto Arturo Sebastián</p>
+            <p style="margin: 0;"><b>Student ID:</b> A00842192</p>
+        </div>
+    </div>
+
+    <!--numeros del estacionamiento-->
+    <div id="dashboard" class="caja">
+        <h2>Dashboard</h2>
+
+        <div class="dashboard">
+            <div class="dato">
+                <p>Total spaces</p>
+                <span id="total">0</span>
+            </div>
+            <div class="dato">
+                <p>Occupied</p>
+                <span id="ocupados" style="color: #f3a6a6;">0</span>
+            </div>
+            <div class="dato">
+                <p>Available</p>
+                <span id="libres" style="color: #9fe0b4;">0</span>
+            </div>
+            <div class="dato">
+                <p>Occupancy</p>
+                <span id="porcentaje">0%</span>
+            </div>
+        </div>
+
+        <!--Barra de ocupacion-->
+        <div class="barra">
+            <div id="barra-llena" class="barra-llena"></div>
+        </div>
+
+        <!--Boton para pasuar-->
+        <div style="text-align: center; margin-top: 20px;">
+            <button id="boton-pausa" onclick="pausar()">Pause sensors</button>
+            <p id="estado-sensores" class="estado">Sensors running — updating every 3 seconds</p>
+        </div>
+    </div>
+
+    <!--Mapa-->
+    <div id="parking" class="caja">
+        <h2>Parking lot</h2>
+        <p style="margin: 0 0 15px 0;">Click on a space to change its status.</p>
+
+        <!--Leyenda-->
+        <div class="leyenda">
+            <div><span class="cuadro" style="background-color: #9fe0b4;"></span> Available</div>
+            <div><span class="cuadro" style="background-color: #f3a6a6;"></span> Occupied</div>
+        </div>
+
+        <div class="asfalto">
+            <div class="calle-horizontal">&#8592; &nbsp; &nbsp; &#8592; &nbsp; &nbsp; &#8592;</div>
+
+            <div id="estacionamiento" class="estacionamiento"></div>
+
+            <div class="calle-horizontal">&#8594; &nbsp; &nbsp; &#8594; &nbsp; &nbsp; &#8594;</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3b3e44;
+    color: #f1f2f4;
+    max-width: 1050px;
+    padding: 0 15px;
+    margin: 20px auto;
+}
+
+.menu {
+    background-color: #52565d;
+    padding: 15px;
+    border-radius: 0.5cm;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.menu a {
+    color: #d6d9de;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 12px;
+}
+
+.menu .menu-portfolio {
+    color: white;
+}
+
+.caja {
+    background-color: #46494f;
+    padding: 20px;
+    border-radius: 0.5cm;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 1.1cm;
+    color: #d6d9de;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 0.8cm;
+    color: #d6d9de;
+    margin: 0 0 15px 0;
+    border-bottom: 4px solid #5f646b;
+    padding-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 20px;
+    color: #9fe0b4;
+    font-weight: bold;
+    margin: 0 0 25px 0;
+}
+
+.tarjeta {
+    background-color: #52565d;
+    padding: 20px 30px;
+    border-radius: 0.3cm;
+    border-left: 8px solid #d6d9de;
+}
+
+.tarjeta p {
+    font-size: 17px;
+    margin: 0 0 10px 0;
+}
+
+.dashboard {
+    display: flex;
+    gap: 15px;
+}
+
+.dato {
+    flex: 1;
+    background-color: #52565d;
+    padding: 15px;
+    border-radius: 0.3cm;
+    text-align: center;
+    border-top: 6px solid #d6d9de;
+}
+
+.dato p {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+}
+
+.dato span {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.barra {
+    background-color: #9fe0b4;
+    height: 18px;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.barra-llena {
+    background-color: #f3a6a6;
+    height: 100%;
+    width: 0%;
+}
+
+button {
+    background-color: #d6d9de;
+    color: #3b3e44;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 0.3cm;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+}
+
+.estado {
+    margin: 10px 0 0 0;
+    font-size: 15px;
+    color: #d6d9de;
+}
+
+.leyenda {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+.cuadro {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.asfalto {
+    background-color: #5f646b;
+    border-radius: 0.3cm;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+.calle-horizontal {
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    padding: 8px 0;
+}
+
+.estacionamiento {
+    display: flex;
+    justify-content: center;
+}
+
+.calle {
+    width: 55px;
+    color: white;
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.isla {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 3px;
+    background-color: #d6d9de;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.fila {
+    display: flex;
+    gap: 3px;
+}
+
+
+.lugar {
+    width: 48px;
+    height: 22px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #3b3e44;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.lugar:hover {
+    outline: 2px solid white;
+}
+
+.libre {
+    background-color: #9fe0b4;
+}
+
+.ocupado {
+    background-color: #f3a6a6;
+}
